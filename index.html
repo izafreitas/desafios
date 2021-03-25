@@ -14,21 +14,22 @@
         </header>
             <h2>Dados do novo funcionário</h2>
            <!--<img class= "" src=" " alt=" ">-->
-            <form>
+
+        <div class="form" method="post" action="action_page.js">
                 <label for="pnome">Primeiro nome:</label><br>
-                <input type="text" id="pnome" name="pnome" placeholder= "Seu nome" ><br>
+                <input type="text" id="pnome" name="pnome" value=" " placeholder= "Seu nome" ><br>
 
                 <label for="snome">Sobrenome:</label><br>
-                <input type="text" id="snome" name="snome" placeholder="Seu Sobrenome"><br>
+                <input type="text" id="snome" name="snome" value=" " placeholder="Seu Sobrenome"><br>
 
                 <label for="cpf">CPF:</label><br>
-                <input type=" " id="cpf" name="cpf" placeholder="00000000000 "><br>
+                <input type="number" id="cpf" name="cpf" value=" " placeholder="00000000000 "><br>
 
                 <label for="dadmissao">Data de admissão:</label><br>
-                <input type="date" id="date" name="dadmissao" value=" "><br>
+                <input type="date" id="dadmissao" name="dadmissao" value="date "><br>
 
                 <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="number" name="telefone" placeholder="Seu telefone "><br>
+                <input type="number" id="telefone" name="telefone" value=" " placeholder="Seu telefone "><br>
 
                 <label for="number">Endereço</label><br>
 
@@ -36,28 +37,22 @@
                 <input type="text" id="rua" name="rua" value=" "><br>
 
                 <label for="nresidencia">Número da residência:</label><br>
-                <input type="" id="number" name="nresidencia" value=" "><br>
+                <input type="number" id="nresidencia" name="nresidencia" value=" "><br>
 
                 <label for="email">Email:</label><br>
-                <input type="text" id="text" name="email" placeholder="email@dominio.com"><br>
+                <input type="text" id="email" name="email" value=" " placeholder="email@dominio.com"><br>
 
-                <input type="submit" value="Enviar">
+                
+                <input type="submit" id="Submit" name="submit" onclick="alert('Dados cadastrados com sucesso!')"
+                    document.getElementById('submit').innerHTML='.form'></input>
 
+
+                </div>
             </form>
-
-
-           <!----<article>
-            <h2>Curso de JavaScript</h2>
-            <img class="lado" src="imagens/curso-javascript.png" alt="Curso de JS">
-            <p><abbr title="JavaScript">JavaScript</abbr> é uma linguagem de script criada para aumentar a interatividade entre um site
-            e seus visitantes. Os códigos em JS são executados dentro do navegador e dão acesso aos elementos HTML por meio do<abbr title="Document Object Model">DOM<abbr></p>
-            <p><a href="curso-js.html">Acesse o curso de JavaScript</a></p>
-        </article> -->
-
         
     </main>
     <footer>
-        <h6>Pipo Saúde</h6>
+        Pipo Saúde
 
     </footer>
     
